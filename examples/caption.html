@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>CSS3 Transition Module Example</title>
+	<style type="text/css">
+		.image-wrapper {
+			position: relative;
+			width: 400px;
+			border: 6px solid #000;
+		}
+
+		.image-wrapper img {
+			display: block;
+			width: 400px;
+			height: auto;
+		}
+
+		.image-wrapper .caption {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 0;
+			color: #fff;
+			background: rgba(0,0,0,0.8);
+			opacity: 0;
+
+			-webkit-transition-property: opacity, height;
+			-webkit-transition-duration: 0.4s, 0.4s;
+			-webkit-transition-timing-function: ease-out, linear;
+			-webkit-transition-delay: 0.5s, 0.5s;
+		}
+
+		.image-wrapper:hover .caption {
+			height: 36px;
+			opacity: 1;
+		}
+
+		.image-wrapper .caption p {
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="caption-example" class="image-wrapper">
+		<img src="resources/totoro.jpeg" width="1024" height="768" />
+		<div class="caption">
+			<p>My Neighbour Totoro (1988)</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+	</script>
+</body>
+</html>

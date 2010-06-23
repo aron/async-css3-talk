@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>CSS3 Transition Module Example</title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			background: #111111;
+		}
+
+		.collection-header {
+			padding: 0 20px;
+			overflow: hidden;
+			background: rgb(45, 54, 63);
+			background: -moz-linear-gradient(
+				-90deg,
+				rgb(45, 54, 63),
+				rgb(28, 31, 34)
+			);
+			background: -webkit-gradient(
+				linear, left top, left bottom,
+				color-stop(0, rgb(45, 54, 63)),
+				color-stop(1, rgb(28, 31, 34))
+			);
+		}
+
+		.collection-header h1 {
+			color: #fff;
+			text-shadow: 0 -1px 1px #000000;
+			margin: 0;
+			line-height: 42px;
+			font-family: HelveticaNeue-Light, 'Helvetica Neue', Arial;
+			font-size: 16px;
+			font-weight: normal;
+			float: left;
+		}
+
+		.collection-header form input {
+			display: block;
+			font-size: 16px;
+			float: right;
+			margin-top: 10px;
+		}
+
+		ul {
+			list-style-type: none;<img src="" width="50px" height="50px" />
+			margin: 0;
+			padding: 5px 20px;
+		}
+
+		li {
+			display: block;
+			width: 200px;
+			height: 150px;
+			overflow: hidden;
+			float: left;
+			margin: 0 20px 20px 0;
+			opacity: 1;
+			border: none;
+			transition: all 0.4s ease-out;
+			-moz-transition: all 0.4s ease-out;
+			-webkit-transition: all 0.4s ease-out;
+			-o-transition: all 0.4s ease-out;
+		}
+
+		li:nth-child(3n) {
+			margin-right: 0;
+		}
+
+		li.hide {
+			width: 0;
+			margin-right: 0;
+			opacity: 0;
+			transform: scale(0);
+			-webkit-transform: scale(0);
+			-o-transform: scale(0);
+		}
+
+		li img {
+			border: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="collection-wrapper">
+		<div class="collection-header">
+			<h1>Collection View</h1>
+			<form>
+				<input type="search" id="filter" name="filter" value="" placeholder="Filter" autosave="store" results="0" />
+			</form>
+		</div>
+		<ul class="collection-items">
+			<li><img src="resources/image-6.png" alt="Sky" width="200" height="160" /></li>
+			<li><img src="resources/image-2.png" alt="Shoe" width="200" height="160" /></li>
+			<li><img src="resources/image-4.png" alt="Tomato" width="200" height="160" /></li>
+			<li><img src="resources/image-5.png" alt="Blossom" width="200" height="160" /></li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+	(function () {
+		var filter = document.getElementById('filter'),
+		    items  = document.getElementsByTagName('li');
+
+		filter.onchange = function (event) {
+			Array.prototype.forEach.call(items, function (item) {
+				var name = item.firstChild.getAttribute('alt').toLowerCase();
+
+				item.className = '';
+				if (name.indexOf(filter.value.toLowerCase()) === -1) {
+					item.className = 'hide';
+				}
+			});
+		};
+
+		filter.parentNode.onsubmit = function (event) {
+			event.preventDefault();
+		};
+	})();
+	</script>
+</body>
+</html>
