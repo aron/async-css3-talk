@@ -95,3 +95,14 @@
 		}
 	});
 })();
+
+(function () {
+  var distance = 150;
+  window.scrollUp = function () {
+    scrollTo(0, scrollY - distance);
+  };
+
+  window.scrollDown = function () {
+    scrollTo(0, scrollY + distance);
+  };
+})();
