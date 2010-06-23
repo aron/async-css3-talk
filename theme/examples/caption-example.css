@@ -45,14 +45,13 @@
 	margin: 10px;
 }
 
-#slide-15 #caption-example .caption,
 #slide-16 #caption-example .caption,
 #slide-17 #caption-example .caption {
 	-webkit-transition-property: opacity, height;
 	-webkit-transition-duration: 0.4s, 0.4s;
 }
 
-#slide-16 #caption-example .caption {
+#slide-17 #caption-example .caption {
 	-webkit-transition-timing-function: ease-out, linear;
 	-webkit-transition-delay: 2s, 2s;
 }
