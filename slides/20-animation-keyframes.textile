@@ -1,0 +1,12 @@
+h1. Creating the Keyframes
+
+ * Keyframes are simply steps in an animation.
+
+bc(highlight css).. .loading-bar {
+  background: url(stripes.png) repeat-x 0 0;
+}
+ 
+@keyframes loading {
+  from { background-position: 0 0; }
+  to   { background-position: 100px 0; }
+}

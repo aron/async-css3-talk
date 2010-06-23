@@ -1,0 +1,20 @@
+h1. Traditional JavaScript
+
+bc(highlight js).. function animate() {
+  var element  = document.getElementById('traditional-example'),
+      duration = 1000,
+      start    = (new Date).valueOf(),
+      finish   = start + duration,
+      interval;
+
+  interval = setInterval(function () {
+    var time  = (new Date).valueOf(), 
+        frame = (time - start) / duration;
+
+    if (time > finish) {
+      frame = 1;
+      clearInterval(interval);
+    }
+    element.style.height = (frame * 200) + 'px';
+  }, 10);
+}

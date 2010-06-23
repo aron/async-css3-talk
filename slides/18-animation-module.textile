@@ -1,0 +1,6 @@
+h1. CSS Animation Module
+
+ * Animations are applied with identifiers in a similar way to transitions.
+ * Animations are created as keyframes.
+ * The keyframe is then executed a specified number of times.
+ * Allows you to build complex animations.

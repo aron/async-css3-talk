@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>CSS3 Transitions and Animations</title>
+	<link rel="stylesheet" href="theme/styles.css" type="text/css" media="screen" charset="utf-8" />
+</head>
+
+<body>
+	<ul>
+		<% slides.each do |slide| %>
+		<li class="slide">
+			<section>
+				<%= slide %>
+			</section>
+		</li>
+		<% end %>
+	</ul>
+	<footer>
+		<p>CSS3 Transitions &amp; Animations – Async, June 2010</p>
+	</footer>
+
+	<!-- Slide Specific Elements -->
+
+	<div id="traditional-example">
+		<img src="theme/images/totoro-4.png" />
+	</div>
+
+	<div id="transform-diagram">
+		<img src="theme/images/totoro-6.png" />
+		<img src="theme/images/totoro-6.png" />
+	</div>
+
+	<div id="transform-example">
+		<img id="transform-image" src="theme/images/totoro-6.png" />
+	</div>
+
+	<div id="caption-example" class="image-wrapper">
+		<img src="theme/images/totoro-1.png" />
+		<div class="caption">
+			<p>My Neighbour Totoro (1988)</p>
+		</div>
+	</div>
+
+	<div id="animation-example">
+		<img src="theme/images/totoro-2.png" />
+	</div>
+
+	<div id="loading-bar"></div>
+
+	<script src="theme/scripts/webinspector.js" type="text/javascript" charset="utf-8"></script>
+	<script src="theme/scripts/slideshow.js"    type="text/javascript"></script>
+</body>
+</html>

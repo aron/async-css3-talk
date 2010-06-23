@@ -1,0 +1,11 @@
+h1. Scale
+
+ * Scaled the element along the @x@ and @y@ axis
+
+bc(highlight css). #transform-image {
+ transform: scale(2, 2);
+}
+
+notextile.. <pre class="run" style="display:none;">
+ document.getElementById('transform-image').style.webkitTransform = 'scale(2, 2)';
+</pre>

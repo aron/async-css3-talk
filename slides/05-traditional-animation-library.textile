@@ -1,0 +1,17 @@
+h1. Library JavaScript Animations
+
+ * Most libraries accepts a string or object of styles.
+ * Library’s like MooTools have started to use CSS classes.
+ * Allows you to keep styles out of your JavaScript code.
+
+bc(highlight js).. // jQuery Animation
+$('#box').animate({left:100, opacity: 0.5}, 1000);
+
+// MooTools Animation
+var transition = new Fx.Morph('box', {duration: 1000});
+transition.start('.left');
+
+bc(highlight css).. .left {
+  top: 100px;
+  opacity: 0.5;
+}

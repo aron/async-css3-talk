@@ -1,0 +1,23 @@
+#slide-3 #traditional-example {
+	display: block;
+}
+
+#traditional-example {
+	z-index: 100;
+	position: absolute;
+	font-family: HelveticaNeue;
+	top: 100px;
+	right: 30px;
+	height: 0;
+	width: 320px;
+	overflow: hidden;
+	display: none;
+}
+
+#traditional-example img {
+	position: absolute;
+	bottom: 0;
+	display: block;
+	height: 500px;
+	width: auto;
+}

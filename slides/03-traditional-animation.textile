@@ -1,0 +1,27 @@
+h1. Traditional JavaScript
+
+ * Function that changes a CSS property at an interval.
+ * Interval stops when property reaches final value.
+ * Hard codes presentation logic into your JavaScript.
+ * "Let's make a framework":http://dailyjs.com/tags.html#lmaf & "emile.js":http://github.com/madrobby/emile/.
+
+notextile.. <pre class="run" style="display:none;">
+(function () {
+  var box = document.getElementById('traditional-example'),
+      duration = 1000,
+      start = (new Date).valueOf(),
+      finish = start + duration,
+      interval;
+
+  interval = setInterval(function () {
+    var time = (new Date).valueOf(), frame = time > finish ? 1 : (time - start) / duration;
+
+    // The thing being animated
+    box.style.height = (frame * 500) + 'px';
+
+    if (time > finish) {
+      clearInterval(interval);
+    }
+  }, 10);
+})();
+</pre>

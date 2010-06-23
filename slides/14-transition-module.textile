@@ -1,0 +1,8 @@
+h1. CSS Transition Module
+
+ * Automatically animates changes in CSS properties 
+ * Most numeric properties can be animated
+ * Handles converting between units and colours
+ * Simplest and most common form of CSS animation
+
+<img src="theme/images/bad-transition.png" width="850" height="300" alt="Bad Transition">

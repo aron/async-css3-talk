@@ -1,0 +1,4 @@
+h1. About Me
+
+ * Aron Carroll ("@ac94":http://twitter.com/ac94)
+ * Slides on GitHub "aron.github.com/async-css3-talk":aron.github.com/async-css3-talk

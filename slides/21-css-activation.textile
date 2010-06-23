@@ -1,0 +1,21 @@
+h1. Activation using CSS
+
+ * Use CSS pseudo-classes.
+ ** @:hover@  => mouseover/mouseout
+ ** @:active@ => mousedown/mouseup
+ ** @:focus@  => focus
+
+<button id="css-button">Click Me</button>
+
+bc(highlight css).. button {
+  transition: color 2s ease; 
+  border: 3px solid #a50421; background-color: #ff0433; /* Red Button */
+}
+
+button:hover {
+  background-color: #ffdc00; border-color: #b19904; /* Yellow Button */
+}
+
+button:active {
+  background-color: #98ff3d; border-color: #68b428; /* Green Button */
+}

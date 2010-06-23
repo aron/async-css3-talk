@@ -1,0 +1,12 @@
+h1. Applying Keyframes to an Element
+
+bc(highlight css).. .loading-bar {
+  /* Other styles here... */
+  background: url(stripes.png) repeat-x 0 0;
+  
+  animation-name: loading;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  animation-direction: normal; /* 'linear' or 'alternate' */
+}

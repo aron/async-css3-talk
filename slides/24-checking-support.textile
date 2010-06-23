@@ -1,0 +1,20 @@
+h1. Checking for Browser Support
+
+bc(highlight js).. var transition = (function () {
+  var transition = '',
+      types = ['transition', 'webkitTransition', 'OTransition', 'MozTransition'],
+      count = types.length,
+      index = 0,
+      style;
+
+    if (!window.getComputedStyle) { return transition; }
+
+    style = window.getComputedStyle(document.documentElement, null);
+    for (;index < count; index += 0) {
+       if (types[index] in style) {
+          transition = types[index];
+          break;
+       }
+    }
+    return transition;
+})();

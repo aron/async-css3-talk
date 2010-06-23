@@ -1,0 +1,18 @@
+require "redcloth"
+require "erb"
+
+desc "Build the slideshow HTML file"
+task :build do
+  template = File.read "theme/template.rhtml"
+  presentation = ERB.new(template, 0, "<>")
+  slides = []
+
+  Dir.glob("slides/*.textile") do |filename|
+    textile = File.read filename
+    slides << RedCloth.new(textile).to_html
+  end
+
+  File.open("index.html", "w") { |file| file.write presentation.result(binding) }
+end
+
+task :default => :build

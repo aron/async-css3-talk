@@ -1,0 +1,11 @@
+h1. Plain CSS
+
+bc(highlight css).. #image caption {
+  opacity: 0;
+  height: 0;
+}
+
+#image caption:hover {
+  opacity: 1;
+  height: 30px;
+}

@@ -1,0 +1,5 @@
+h1. Limitations
+
+ * Vendor prefixes suck.
+ * Syntax is pretty verbose especially with vendor prefixes
+ * Callbacks are a little clunky.

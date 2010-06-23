@@ -1,0 +1,28 @@
+#slide-8 #transform-diagram {
+	display: block;
+}
+
+#transform-diagram {
+	z-index: 100;
+	position: absolute;
+	top: 350px;
+	left: 50%;
+	margin-left: -315px;
+	width: 630px;
+	display: none;
+}
+
+#transform-diagram img{
+	display: block;
+	float: left;
+	padding: 0;
+	width: 300px;
+	height: auto;
+}
+
+
+#transform-diagram img:last-child {
+	-webkit-transform: rotate(20deg) skew(20deg, -5deg) scaleY(0.95);
+	-webkit-transform-origin:  0 0;
+	margin-left: 30px;
+}

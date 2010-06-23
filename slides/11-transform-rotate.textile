@@ -1,0 +1,12 @@
+h1. Rotate
+
+ * Rotates the element around its @transform-origin@
+ 
+bc(highlight css). #transform-image {
+  transform: rotate(45deg);
+  transform-origin: 50% 50%;
+}
+
+notextile.. <pre class="run" style="display:none;">
+  document.getElementById('transform-image').style.webkitTransform = 'rotate(45deg)';
+</pre>

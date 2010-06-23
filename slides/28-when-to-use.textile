@@ -1,0 +1,4 @@
+h1. When To Use Them?
+
+ * To enhance the experience for users with modern browsers.
+ * Building mobile sites for WebKit/Opera browsers.

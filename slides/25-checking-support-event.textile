@@ -1,0 +1,9 @@
+h1. Getting the correct Event Handler
+
+ * Use the result to set the @transitionend@ event.
+
+bc(highlight js).. var transition_event = 'transitionend';
+
+if (transition === 'webkitTransition' || transition === 'OTransition') {
+  transition_event = transition + 'End';
+}

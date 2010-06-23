@@ -1,0 +1,9 @@
+h1. Other Links
+
+ * W3C Transitions: http://www.w3.org/TR/css3-transitions/
+ * W3C Animations: http://www.w3.org/TR/css3-animations/
+ * W3C Transforms: http://www.w3.org/TR/css3-2d-transforms/
+ * Our Solar System: http://neography.com/experiment/circles/solarsystem/
+ * HTML5Rocks: http://html5rocks.com/
+ * Apple HTML5: http://www.apple.com/html5/showcase/gallery/
+ * Apple Developer Area: http://developer.apple.com/safari/

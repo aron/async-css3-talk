@@ -1,0 +1,37 @@
+#slide-18 #loading-bar,
+#slide-19 #loading-bar {
+	display: block;
+}
+
+#loading-bar {
+	display: none;
+	position: absolute;
+	top: 550px;
+	left: 50%;
+	height: 50px;
+	width: 760px;
+	margin-top: -6px;
+	margin-left: -384px;
+	text-indent: -999em;
+	border: 4px solid #0d58c6;
+	background: url("../images/loading-stripes.png");
+	background: url("../images/loading-stripes.png"), 
+		-webkit-gradient(
+			linear, left top, left bottom, 
+			color-stop(0, rgb(38,165,252)),
+			color-stop(1, rgb(20,104,233))
+		);
+	background-repeat: repeat-x;
+
+	-webkit-border-radius: 10px;
+	-webkit-animation-name: loading;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: normal;
+}
+
+@-webkit-keyframes loading {
+	from { background-position: 0 0; }
+	to   { background-position: 100px 0; }
+}

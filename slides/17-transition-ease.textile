@@ -1,0 +1,17 @@
+h1. Transition Properties & Duration
+
+bc(highlight css).. #image caption {
+ opacity: 0;
+ height: 0;
+
+ transition-property: opacity, height;
+ transition-duration: 0.4s, 0.4s;
+ transition-timing-function: 
+   ease-out, linear;
+ transition-delay: 2s, 2s;
+}
+
+#image caption:hover {
+ opacity: 1;
+ height: 30px;
+}

@@ -1,0 +1,8 @@
+h1. Browser Support
+
+|_.            |_. Safari 3+|_. Chrome 4+|_. FireFox 3.6  |_. FireFox 4.0  |_. Opera 10.5+  |_. IE8       |
+|_. Transforms | YES        | YES        | YES            | YES            | YES            |(fail). NO   |
+|_. Transitions| YES        | YES        |(fail). NO      | YES            | YES            |(fail). NO   |
+|_. Animations | YES        | YES        |(fail). NO      |(fail). NO      |(fail). NO      |(fail). NO   |
+
+p(note). NOTE: FireFox 4.0 does not yet support the animation of transforms.

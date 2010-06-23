@@ -1,0 +1,11 @@
+h1. Skew
+
+ * Skews the element along the @x@ and @y@ axes
+ 
+bc(highlight css). #transform-image {
+  transform: skew(15deg, 45deg);
+}
+
+notextile.. <pre class="run" style="display:none;">
+  document.getElementById('transform-image').style.webkitTransform = 'skew(15deg, 45deg)';
+</pre>

@@ -1,0 +1,25 @@
+h1. Creating Transitions in JavaScript
+
+ * Simple as defining the transition styles on the element.
+ * Set the new css properties.
+ * Listen for the @transitionend@ events (One per property)
+ * Do something once they’re all completed.
+
+bc(highlight js).. var element = document.getElementById('form');
+
+function onAnimationComplete() {
+  // Do something useful.
+}
+
+if (transition) {
+  element.style[transition + 'Property'] = 'height';
+  element.style[transition + 'Duration'] = '2s';
+  element.style[transition + 'TimingFunction'] = 'linear';
+  element.style.height = '200px';
+  element.addEventListener(transition_end, function (event) {
+    onAnimationComplete();
+  }, false);
+} else {
+  // Use standard animation method...
+  $(element).animate({height:200}, 2000, onAnimationComplete);
+}

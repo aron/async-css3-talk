@@ -1,0 +1,6 @@
+h1. Backstory
+
+ * Development started by the WebKit team in 2007.
+ * Adopted by Apple for use in mobile Safari for iPhone.
+ * Proposed to W3C as a spec in March 2009.
+ * Recently other browsers have begun to implement them.

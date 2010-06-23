@@ -1,0 +1,11 @@
+h1. Translate
+
+ * Moves the element relatively along the @x@ and @y@ axis
+ 
+bc(highlight css). #transform-image {
+  transform: translate(20px, 30px);
+}
+
+notextile.. <pre class="run" style="display:none;">
+  document.getElementById('transform-image').style.webkitTransform = 'translate(100px, 20px)';
+</pre>

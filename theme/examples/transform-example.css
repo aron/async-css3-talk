@@ -1,0 +1,24 @@
+#slide-9  #transform-example,
+#slide-10 #transform-example,
+#slide-11 #transform-example,
+#slide-12 #transform-example {
+	display: block;
+}
+
+#transform-example {
+	display: none;
+	position: absolute;
+	top: 400px;
+	left: 50%;
+	width: 300px;
+	margin-left: -150px;
+	border: 5px #333 dashed;
+	z-index: 1000;
+}
+
+#transform-example img {
+	display: block;
+	padding: 0;
+	width: 300px;
+	height: auto;
+}

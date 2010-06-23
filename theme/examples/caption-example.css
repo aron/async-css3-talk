@@ -1,0 +1,58 @@
+#slide-14 #caption-example,
+#slide-15 #caption-example,
+#slide-16 #caption-example {
+	display: block;
+}
+
+#caption-example {
+	position: absolute;
+	font-family: HelveticaNeue;
+	top: 150px;
+	right: 50px;
+	width: 400px;
+	border: 6px solid #061729;
+	display: none;
+}
+
+#caption-example img {
+	display: block;
+}
+
+#caption-example img {
+	display: block;
+	width: 400px;
+	height: auto;
+}
+
+#caption-example .caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	color: #fff;
+	background: rgba(0,0,0,0.8);
+	opacity: 0;
+}
+
+#caption-example:hover .caption {
+	height: 36px;
+	opacity: 1;
+}
+
+#caption-example .caption p {
+	line-height: 20px;
+	margin: 10px;
+}
+
+#slide-15 #caption-example .caption,
+#slide-16 #caption-example .caption,
+#slide-17 #caption-example .caption {
+	-webkit-transition-property: opacity, height;
+	-webkit-transition-duration: 0.4s, 0.4s;
+}
+
+#slide-16 #caption-example .caption {
+	-webkit-transition-timing-function: ease-out, linear;
+	-webkit-transition-delay: 2s, 2s;
+}
