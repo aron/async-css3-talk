@@ -23,10 +23,10 @@
 			<section>
 				<h1>Introduction</h1>
 <ul>
-	<li>Traditional JavaScript examples and separating logic.</li>
-	<li><span class="caps">CSS</span> Transition Module what it is and how to implement it.</li>
+	<li>Traditional JavaScript.</li>
+	<li>Browser support.</li>
+	<li><span class="caps">CSS</span> Transition Module.</li>
 	<li><span class="caps">CSS</span> Animation Module.</li>
-	<li>Browser support and use cases.</li>
 	<li>Limitations of the current implementation.</li>
 </ul>
 			</section>
@@ -93,10 +93,16 @@ if (time > finish) {
 			<section>
 				<h1>Library JavaScript Animations</h1>
 <ul>
-	<li>Most libraries accepts a string or object of styles.</li>
-	<li>Library’s like MooTools have started to use <span class="caps">CSS</span> classes.</li>
+	<li>Most libraries accept a string or object of styles.</li>
+	<li>Libraries like MooTools have started to use <span class="caps">CSS</span> classes.</li>
 	<li>Allows you to keep styles out of your JavaScript code.</li>
 </ul>
+			</section>
+		</li>
+		
+		<li class="slide">
+			<section>
+				<h1>Library JavaScript Examples</h1>
 <pre class="highlight js"><code class="highlight js">// jQuery Animation
 $('#box').animate({left:100, opacity: 0.5}, 1000);</code>
 
@@ -261,10 +267,9 @@ transition.start('.left');</code></pre>
 			<section>
 				<h1><span class="caps">CSS</span> Transition Module</h1>
 <ul>
-	<li>Automatically animates changes in <span class="caps">CSS</span> properties</li>
-	<li>Most numeric properties can be animated</li>
-	<li>Handles converting between units and colours</li>
-	<li>Simplest and most common form of <span class="caps">CSS</span> animation</li>
+	<li>Automatically animates changes in <span class="caps">CSS</span> properties.</li>
+	<li>Most numeric properties can be animated.</li>
+	<li>Handles converting between units and colours.</li>
 </ul>
 <p><img src="theme/images/bad-transition.png" width="850" height="300" alt="Bad Transition"></p>
 			</section>
@@ -360,6 +365,9 @@ transition.start('.left');</code></pre>
 		<li class="slide">
 			<section>
 				<h1>Applying Keyframes to an Element</h1>
+<ul>
+	<li>Assign the animation to an element by name.</li>
+</ul>
 <pre class="highlight css"><code class="highlight css">.loading-bar {
   /* Other styles here... */
   background: url(stripes.png) repeat-x 0 0;</code>
@@ -376,7 +384,7 @@ transition.start('.left');</code></pre>
 		
 		<li class="slide">
 			<section>
-				<h1>Activation using <span class="caps">CSS</span></h1>
+				<h1>Changing properties using <span class="caps">CSS</span></h1>
 <ul>
 	<li>Use <span class="caps">CSS</span> pseudo-classes.
 	<ul>
@@ -405,12 +413,18 @@ button {
 		
 		<li class="slide">
 			<section>
-				<h1>Activation with JavaScript</h1>
+				<h1>Changing properties with JavaScript</h1>
 <ul>
 	<li>Listen for a <span class="caps">DOM</span> event such as <code>click</code> or <code>mouseover</code>.</li>
 	<li>Apply a class to trigger the change in styles.</li>
 	<li>Add an event listener to know when the transition is finished.</li>
 </ul>
+			</section>
+		</li>
+		
+		<li class="slide">
+			<section>
+				<h1>Activation with JavaScript</h1>
 <pre class="highlight js"><code class="highlight js">var element = document.getElementById('form'),
     button = document.getElementById('trigger');</code>
 
@@ -431,6 +445,12 @@ button.addEventListener('click', function (event) {
 	<li>W3C spec defines the <code>transitionend</code> event supported by FireFox 4.0.</li>
 	<li>Webkit decided to use <code>webkitTransitionEnd</code> and Opera use <code>OTransitionEnd</code></li>
 </ul>
+			</section>
+		</li>
+		
+		<li class="slide">
+			<section>
+				<h1>TransitionEnd Example</h1>
 <pre class="highlight js"><code class="highlight js">element.addEventListener('transitionend', function (event) { 
   event.propertyName; // CSS property associated with the transition.
   event.elapsedTime;  // Time (s) the transition took to complete.
@@ -483,9 +503,8 @@ button.addEventListener('click', function (event) {
 			<section>
 				<h1>Observations on Performance</h1>
 <ul>
-	<li>Mobile Safari utilises the <span class="caps">GPU</span>.</li>
-	<li>Not certain if other browsers do this.</li>
-	<li>Makes them incredibly useful on Mobile platforms.</li>
+	<li>Incredibly useful on Mobile platforms.</li>
+	<li>Some browsers leverage the graphics card.</li>
 	<li>Not much difference on faster hardware.</li>
 </ul>
 			</section>
@@ -496,7 +515,7 @@ button.addEventListener('click', function (event) {
 				<h1>Limitations</h1>
 <ul>
 	<li>Vendor prefixes suck.</li>
-	<li>Syntax is pretty verbose especially with vendor prefixes</li>
+	<li>Syntax is pretty verbose.</li>
 	<li>Callbacks are a little clunky.</li>
 </ul>
 			</section>
@@ -506,8 +525,8 @@ button.addEventListener('click', function (event) {
 			<section>
 				<h1>When To Use Them?</h1>
 <ul>
-	<li>To enhance the experience for users with modern browsers.</li>
-	<li>Building mobile sites for WebKit/Opera browsers.</li>
+	<li>To enhance browsing in modern browsers.</li>
+	<li>Building mobile apps for WebKit/Opera browsers.</li>
 </ul>
 			</section>
 		</li>
