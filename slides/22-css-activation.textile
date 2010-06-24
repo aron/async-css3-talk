@@ -1,4 +1,4 @@
-h1. Activation using CSS
+h1. Changing properties using CSS
 
  * Use CSS pseudo-classes.
  ** @:hover@  => mouseover/mouseout

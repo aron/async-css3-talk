@@ -1,10 +1,10 @@
-#slide-18 #animation-example {
+#slide-19 #animation-example {
 	display: block;
 }
 
 #animation-example {
 	display: none;
-	top: 400px;
+	top: 440px;
 	left: 30px;
 	border: none;
 	position: absolute;
@@ -26,15 +26,19 @@
 		left: 30px;
 	}
 	25% {
-		left: 500px;
+		left: 550px;
 		-webkit-transform: rotate(10deg) scale(1.2);
 	}
-	75% {
+	65% {
 		left: 0px;
+		-webkit-transform: rotate(20deg) scale(1.2);
+	}
+	75% {
+		left: 150px;
 		-webkit-transform: rotate(-5deg);
 	}
 	to {
-		left: 160px;
+		left: 30px;
 		-webkit-transform: rotate(0deg);
 	}
 }

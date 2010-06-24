@@ -1,12 +1,12 @@
-#slide-19 #loading-bar,
-#slide-20 #loading-bar {
+#slide-20 #loading-bar,
+#slide-21 #loading-bar {
 	display: block;
 }
 
 #loading-bar {
 	display: none;
 	position: absolute;
-	top: 550px;
+	top: 600px;
 	left: 50%;
 	height: 50px;
 	width: 760px;

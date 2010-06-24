@@ -1,6 +1,0 @@
-h1. Observations on Performance
-
- * Mobile Safari utilises the GPU.
- * Not certain if other browsers do this.
- * Makes them incredibly useful on Mobile platforms.
- * Not much difference on faster hardware.
