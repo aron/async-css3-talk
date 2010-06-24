@@ -1,0 +1,5 @@
+h1. Observations on Performance
+
+ * Incredibly useful on Mobile platforms.
+ * Some browsers leverage the graphics card.
+ * Not much difference on faster hardware.

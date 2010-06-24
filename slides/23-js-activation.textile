@@ -1,0 +1,5 @@
+h1. Changing properties with JavaScript
+
+ * Listen for a DOM event such as @click@ or @mouseover@. 
+ * Apply a class to trigger the change in styles.
+ * Add an event listener to know when the transition is finished.

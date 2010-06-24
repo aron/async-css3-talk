@@ -1,5 +1,7 @@
 h1. Applying Keyframes to an Element
 
+ * Assign the animation to an element by name.
+
 bc(highlight css).. .loading-bar {
   /* Other styles here... */
   background: url(stripes.png) repeat-x 0 0;

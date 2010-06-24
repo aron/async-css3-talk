@@ -1,7 +1,7 @@
 h1. Introduction
 
- * Traditional JavaScript examples and separating logic.
- * CSS Transition Module what it is and how to implement it.
+ * Traditional JavaScript.
+ * Browser support.
+ * CSS Transition Module.
  * CSS Animation Module.
- * Browser support and use cases.
  * Limitations of the current implementation.

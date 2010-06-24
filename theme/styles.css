@@ -57,7 +57,7 @@ ul {
 }
 
 li {
-	font-size: 1.1em;
+	font-size: 28px;
 	line-height: 2.6em;
 }
 
@@ -112,6 +112,7 @@ pre {
 }
 
 pre code {
+	font-size: 20px;
 	display: block;
 	padding: 0;
 	margin: 0;

@@ -1,0 +1,6 @@
+h1. TransitionEnd Example
+
+bc(highlight js).. element.addEventListener('transitionend', function (event) { 
+  event.propertyName; // CSS property associated with the transition.
+  event.elapsedTime;  // Time (s) the transition took to complete.
+}, false);
