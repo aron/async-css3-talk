@@ -10,7 +10,7 @@ bc(highlight js).. var transition = (function () {
     if (!window.getComputedStyle) { return transition; }
 
     style = window.getComputedStyle(document.documentElement, null);
-    for (;index < count; index += 0) {
+    for (;index < count; index += 1) {
        if (types[index] in style) {
           transition = types[index];
           break;
